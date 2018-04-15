@@ -33,9 +33,3 @@ gulp server
 ```bash
 gulp server-build
 ```
-
-Copyright (C) 2017 Jozef Butko<br>
-[www.jozefbutko.com](http://www.jozefbutko.com)<br>
-[www.github.com/jbutko](http://www.github.com/jbutko)<br>
-[@jozefbutko](http://www.twitter.com/jozefbutko)<br>
-Released under MIT license

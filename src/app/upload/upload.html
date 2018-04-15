@@ -1,0 +1,26 @@
+<div class="wrapper fileupload">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+			<form class="form-inline upload-form">
+				<h1 class="drop-text-h1 hidden-sm hidden-xs">Drop your file here to upload</h1>
+				<h1 class="drop-text-h1 hidden-md hidden-lg">Use the uploader button for smaller devices</h1>
+				<h3 class="drop-text-h3">{{vm.uploader_message}}</h3>
+				<div class="message-text" ng-if="vm.show_loader">
+					<span class="progress-percent">{{vm.progress.width}}</span>
+				</div>
+				<div ng-class="{'hide-it': vm.show_loader}" class="uploader-button">
+					<input type="file" name="input-fileupload" class="input-fileupload">
+					<label for="input-fileupload"><i class="glyphicon glyphicon-open"></i>	Choose a file</label>
+				</div>
+			</form>
+		</div>
+		<div class="progress-container" ng-if="vm.show_loader">
+			<div id="progress" class="progress">
+				<div class="progress-bar" ng-style="vm.progress"></div>
+			</div>
+		</div>
+        <div class="panel-body video-container" ng-if="vm.show_video">
+			<div class="wistia_embed" style="height: 100%; width: 100%;" ng-bind-html="vm.video_preview_html"></div>
+        </div>
+    </div>
+</div>

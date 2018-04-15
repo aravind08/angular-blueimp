@@ -1,0 +1,91 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-csp="" ng-app="boilerplate">
+<!--<![endif]-->
+
+<head>
+
+	<base href="/">
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>AngularJs Wistia File Uploader</title>
+	<meta name="description" content="An AngularJs app to upload files to Wistia account using Blueimp plugin">
+
+	<!-- mobile meta -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+	<!--[if IE]>
+			<link rel="shortcut icon" href="favicon.ico">
+		<![endif]-->
+	<!-- or, set /favicon.ico for IE10 win -->
+	<meta name="msapplication-TileColor" content="#f01d4f">
+
+	<!-- fonts -->
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=latin-ext" rel="stylesheet">
+
+	<!-- CSS -->
+	<!-- build:css css/style.min.css -->
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+	<!-- endbuild -->
+
+</head>
+
+<body class="main-wrapper">
+
+	<!--[if lt IE 8]>
+		    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+	<!-- Navigation -->
+	<main-nav></main-nav>
+
+	<!-- Main view -->
+	<div ui-view></div>
+
+</body>
+
+<!-- Vendors -->
+<!-- build:nonangularlibs js/nonangularlibs.js -->
+<!-- endbuild -->
+
+<!-- Non-angular libraries -->
+<!-- build:libs js/libs.js -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.21.0/js/jquery.fileupload.min.js"></script>
+<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+<!-- endbuild -->
+
+<!-- Angular external libraries for application -->
+<!-- build:angularlibs js/angularlibs.js -->
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.9/angular-sanitize.min.js"></script>
+<!-- endbuild -->
+
+
+<!-- Angular components -->
+<!-- build:appcomponents js/appcomponents.js -->
+<script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/app.routes.js"></script>
+<script type="text/javascript" src="app/_shared/config.js"></script>
+<script type="text/javascript" src="app/upload/upload.component.js"></script>
+<script type="text/javascript" src="app/main-nav/main.nav.component.js"></script>
+<script type="text/javascript" src="app/home/home.component.js"></script>
+<!-- endbuild -->
+
+<!-- templates from $templateCache -->
+<!-- build:templates -->
+<!-- endbuild -->
+
+</html>

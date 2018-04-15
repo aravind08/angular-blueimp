@@ -1,0 +1,75 @@
+.fileupload {
+	.panel{
+		margin-top: 40px;
+		.panel-heading{
+			border-bottom:0;
+		}
+	}
+	.message-text{
+		text-align: center;
+		.progress-percent{
+			font-size: 28px;
+			display: block;
+			color: #656565;
+			margin-top: 12px;
+		}
+	}
+	.progress-container{
+		background: #f5f5f5;
+		border-bottom: 1px;
+		border-color: #ddd;
+		.progress{
+			margin-bottom: 0;
+			border-radius: 0;
+			height: 8px;
+		}
+	}
+	form.upload-form{
+		text-align: center;
+		min-height: 230px;
+		.drop-text-h1{
+			margin-top: 40px;
+			padding-top: 40px;
+			font-size: 36px;
+		}
+		.drop-text-h3{
+			font-size: 18px;
+			color: #b9b9b9;
+			margin-top: 20px;
+		}
+		.uploader-button{
+			display: inline-block;
+    		margin: 30px auto 0;
+			.input-fileupload{
+				opacity: 0;
+				overflow: hidden;
+				position: absolute;
+				z-index: 0;
+				height: 48px;
+				width: 175px;
+			}
+			.input-fileupload + label {
+				color: #fff;
+				background-color: #005CC8;
+				display: inline-block;
+				font-size: 16px;
+				padding: 12px 20px;
+				border-radius: 4px;
+			}
+			.input-fileupload:focus + label,
+			.input-fileupload + label:hover {
+				background-color: #005CC8;
+			}
+			label i{
+				margin-right: 15px; 
+			}
+		}
+		div.hide-it{
+			visibility: hidden;
+		}
+	}
+	.video-container{
+		padding: 10px 0 0px;
+    	margin-bottom: -5px;
+	}
+}

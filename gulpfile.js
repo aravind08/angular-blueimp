@@ -5,6 +5,7 @@ var $ = require('gulp-load-plugins')();
 var del = require('del');
 var runSequence = require('run-sequence');
 var modRewrite = require('connect-modrewrite');
+var gutil = require('gulp-util');
 
 // optimize images
 gulp.task('images', function() {
@@ -130,7 +131,7 @@ gulp.task('usemin', function() {
       css: [$.minifyCss(), 'concat'],
       angularlibs: [$.uglify()],
       appcomponents: [$.uglify()],
-    }))
+    })).on('error', gutil.log)
     .pipe(gulp.dest('./_build/'));
 });
 
@@ -214,7 +215,7 @@ gulp.task('build', function(callback) {
     'sass:build',
     'images',
     'templates',
-    'usemin',
+    // 'usemin',
     'fonts',
     callback);
 });

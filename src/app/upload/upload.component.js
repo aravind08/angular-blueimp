@@ -5,16 +5,16 @@
   angular
     .module('boilerplate')
     .component('fileUploader', {
-      templateUrl: 'app/fileupload/fileupload.html',
-      controller: FileUploaderCtrl,
+      templateUrl: 'app/upload/upload.html',
+      controller: UploaderCtrl,
       controllerAs: 'vm'
     });
 
 
-  FileUploaderCtrl.$inject = ['$scope', '$element', '$attrs', '$http', '$timeout', '$sce', 'CONSTANTS'];
+  UploaderCtrl.$inject = ['$element', '$attrs', '$http', '$timeout', '$sce', 'CONSTANTS'];
 
 
-  function FileUploaderCtrl($scope, $element, $attrs, $http, $timeout, $sce, CONSTANTS) {
+  function UploaderCtrl($element, $attrs, $http, $timeout, $sce, CONSTANTS) {
     var vm = this;
     var date = new Date();
 
@@ -58,10 +58,7 @@
       fail: function (e, data) {
         // clear the videoes if it's 403 and retry uploading
         if (data.jqXHR.status == 403) {
-          $timeout(function () {
-            vm.uploader_message = "The account has reached the video upload limit. Please wait while we clear the videoes...";
-            clearVideosForUpload(data);
-          }, 0);
+          clearVideosForUpload(data);
         }
       },
       progressall: function (e, data) {
@@ -72,6 +69,9 @@
 
 
     function clearVideosForUpload(data) {
+      $timeout(function () {
+        vm.uploader_message = "The account has reached the video upload limit. Please wait while we clear the videoes...";
+      }, 0);
       var config = {
         params: {
           'api_password': CONSTANTS.WISTIA.password,

@@ -27,12 +27,14 @@
 	<meta name="msapplication-TileColor" content="#f01d4f">
 
 	<!-- fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=latin-ext" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=latin-ext" rel="stylesheet">
+	
+	<!-- external css -->
+	<!-- <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.3/jasmine.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 
 	<!-- CSS -->
 	<!-- build:css css/style.min.css -->
-	<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.3/jasmine.min.css"> -->
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
 	<!-- endbuild -->
 
@@ -52,40 +54,44 @@
 
 </body>
 
+<!-- External libraries -->
+<!-- Jasmine references -->
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.3/jasmine.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.3/jasmine-html.min.js"></script> -->
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.3/boot.min.js"></script> -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.21.0/js/jquery.fileupload.min.js"></script>
+<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.9/angular-sanitize.min.js"></script>
+<!-- <script src="//code.angularjs.org/1.6.9/angular-mocks.js"></script> -->
+
+
 <!-- Vendors -->
 <!-- build:nonangularlibs js/nonangularlibs.js -->
 <!-- endbuild -->
 
+
 <!-- Non-angular libraries -->
 <!-- build:libs js/libs.js -->
-<!-- Jasmine references -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.3/jasmine.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.3/jasmine-html.min.js"></script> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.3/boot.min.js"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.21.0/js/jquery.fileupload.min.js"></script>
-<script charset="ISO-8859-1" src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
 <!-- endbuild -->
 
 <!-- Angular external libraries for application -->
 <!-- build:angularlibs js/angularlibs.js -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.9/angular-sanitize.min.js"></script>
-<!-- <script src="https://code.angularjs.org/1.6.9/angular-mocks.js"></script> -->
 <!-- endbuild -->
 
 
 <!-- Angular components -->
 <!-- build:appcomponents js/appcomponents.js -->
-<script type="text/javascript" src="app/app.js"></script>
-<script type="text/javascript" src="app/app.routes.js"></script>
-<script type="text/javascript" src="app/_shared/config.js"></script>
-<script type="text/javascript" src="app/upload/upload.component.js"></script>
-<script type="text/javascript" src="app/main-nav/main.nav.component.js"></script>
-<script type="text/javascript" src="app/home/home.component.js"></script>
+<script type="text/javascript" src="./app/app.js"></script>
+<script type="text/javascript" src="./app/app.routes.js"></script>
+<script type="text/javascript" src="./app/_shared/config.js"></script>
+<script type="text/javascript" src="./app/upload/upload.component.js"></script>
+<script type="text/javascript" src="./app/main-nav/main.nav.component.js"></script>
+<script type="text/javascript" src="./app/home/home.component.js"></script>
 <!-- endbuild -->
 
 <!-- templates from $templateCache -->

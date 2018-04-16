@@ -131,7 +131,7 @@ gulp.task('usemin', function() {
       css: [$.minifyCss(), 'concat'],
       angularlibs: [$.uglify()],
       appcomponents: [$.uglify()],
-    })).on('error', gutil.log)
+    }))
     .pipe(gulp.dest('./_build/'));
 });
 
@@ -139,6 +139,7 @@ gulp.task('usemin', function() {
 gulp.task('templates', function() {
   return gulp.src([
       './src/**/*.html',
+      '!./src/index.html',
       '!bower_components/**/*.*',
       '!node_modules/**/*.*',
       '!_build/**/*.*'
@@ -215,7 +216,7 @@ gulp.task('build', function(callback) {
     'sass:build',
     'images',
     'templates',
-    // 'usemin',
+    'usemin',
     'fonts',
     callback);
 });

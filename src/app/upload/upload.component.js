@@ -151,12 +151,12 @@
         api_password: CONSTANTS.WISTIA.password,
         hashed_id: hashed_id
       };
+      var iframe_html = '<iframe src="' + CONSTANTS.WISTIA.embedUrl + hashed_id + '" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen allowtransparency="true" frameborder="0" scrolling="no" class="embed-responsive-item" name="wistia_embed"></iframe>';
       
       $http.get(CONSTANTS.WISTIA.mediaUrl, { params: params }).then(function(res) {
-        var iframe_html = '<iframe src="' + CONSTANTS.WISTIA.embedUrl + hashed_id + '" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen allowtransparency="true" frameborder="0" scrolling="no" class="embed-responsive-item" name="wistia_embed"></iframe>';
         
-        // update progress
         $timeout(function(){
+          // update progress
           vm.progress.width = parseInt(res.data[0].progress * 100, 10) + '%';
           vm.video_preview_html = $sce.trustAsHtml(iframe_html);
         }, 0);
@@ -170,7 +170,6 @@
           return;
         }
   
-        showMessage("Ready!");
         showMessage(res.data[0].name);
         
         vm.show_loader = false;

@@ -15,11 +15,7 @@
    * App config
    */
   function config($locationProvider, $httpProvider, $logProvider) {
-    // TODO:
-    // you can turn off logging globaly here (for production)
-    // $logProvider.debugEnabled(false);
-    $logProvider.debugEnabled(true);
-
+    $logProvider.debugEnabled(false);
   }
 
   /**

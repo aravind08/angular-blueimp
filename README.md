@@ -1,5 +1,6 @@
-# Component-based AngularJS v1 client
-Component-based AngularJS v1 client app based on [AngularJS-Boilerplate](https://github.com/jbutko/AngularJS-Boilerplate)
+# Angular1-Blueimp-Wistia
+
+AngularJs 1 client for uploading videos to Wistia service. A `component-based` pattern based on [AngularJS-Boilerplate](https://github.com/jbutko/AngularJS-Boilerplate)
 
 ## 1. Setup
 ```bash

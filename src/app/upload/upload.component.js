@@ -41,6 +41,7 @@
       }
     ];
 
+    // file upload code goes here
     $($element).fileupload({
       url: CONSTANTS.WISTIA.url,
       autoUpload: false,
